@@ -1,24 +1,47 @@
-# neanderX3
+;------------------------------------------------------------
+;
+;          PROJETO: SIMULADOR NEANDER/X3
+;
+;  Título: Programa para somar dois números
+;  Descrição: Este programa demonstra a operação de soma
+;             no simulador do processador Neander/X3. Ele
+;             carrega dois valores da memória, soma-os e
+;             armazena o resultado em uma variável.
+;
+;  Autor: (Seu nome)
+;  Data: 16-09-2025
+;  Versão: 1.0
+;
+;------------------------------------------------------------
 
+;
+; INSTRUÇÕES DO PROGRAMA
+;
+INICIO:
+    ; LDA (Load to Accumulator): Carrega o valor do
+    ; primeiro número (NUM1) para o acumulador.
+    LDA NUM1
 
-Descrição do Projeto
+    ; ADD (Add): Adiciona o valor do segundo número (NUM2)
+    ; ao valor que já está no acumulador.
+    ADD NUM2
 
-Título: Programa de Soma – Neander/X3
+    ; STA (Store to Address): Armazena o resultado final
+    ; do acumulador na variável 'RESULTADO'.
+    STA RESULTADO
 
-Descrição:
-Este projeto contém um programa em Assembly para o simulador Neander/X3, desenvolvido com o objetivo de somar dois ou mais valores armazenados em memória. O código exemplifica a utilização de instruções básicas da CPU Neander, incluindo carregamento de valores nos registradores, operações de soma, armazenamento de resultados e controle de fluxo.
+    ; HLT (Halt): Interrompe a execução do programa.
+    HLT
 
-O projeto serve como exercício prático de arquitetura de computadores, ajudando a entender como processadores manipulam dados, registradores e memória de forma simples e didática.
-
-Funcionalidades principais:
-
-Somar valores armazenados em memória
-
-Utilizar instruções básicas do Neander/X3 (LOAD, ADD, STORE, HALT)
-
-Demonstrar o funcionamento de registradores e memória no processador
-
-Servir como base para aprendizado de lógica de programação em Assembly
+;
+; DEFINIÇÃO DAS VARIÁVEIS (DADOS)
+;
+; DB (Define Byte) é usado para definir e inicializar
+; um byte de dados na memória.
+;
+NUM1: DB 10         ; Define o primeiro número com o valor 10.
+NUM2: DB 20         ; Define o segundo número com o valor 20.
+RESULTADO: DB 0     ; Reserva um espaço na memória para o resultado, inicializando com 0.
 
 
 
