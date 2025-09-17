@@ -1,47 +1,48 @@
+Boa! 🚀
+17-09-2025
+
+---
+
+🖥️ Simulador Neander/X3 – Multiplicação e Divisão
+
+Este projeto contém um programa em Assembly para o processador Neander/X3, implementando de forma manual as operações de multiplicação e divisão, já que o conjunto de instruções do Neander não possui essas operações de forma nativa.
+
+📌 Funcionalidades
+
+Multiplicação de dois números inteiros usando soma repetida.
+
+Divisão de dois números inteiros usando subtração repetida.
+
+Armazenamento dos resultados em variáveis de memória.
 
 
+🛠️ Estrutura do Código
 
-💻 Projeto: Simulador Neander/X3
+LOOP_MUL → rotina de multiplicação (soma repetida).
 
-📌 Descrição
+LOOP_DIV → rotina de divisão (subtração repetida).
 
-Este projeto é um programa em Assembly para o simulador Neander/X3, cujo objetivo é somar dois números armazenados na memória e guardar o resultado em uma variável.
-
-Ele foi desenvolvido para fins didáticos, a fim de demonstrar como funcionam as instruções básicas (LDA, ADD, STA e HLT) no processador Neander/X3.
-
-⚙️ Funcionamento
-
-1. O programa carrega o valor do primeiro número (NUM1) no acumulador.
+Declaração de Dados → valores de entrada (números) e variáveis para armazenar os resultados.
 
 
-2. Em seguida, soma o valor do segundo número (NUM2).
+📂 Organização
+
+NUM1_MULT / NUM2_MULT → operandos da multiplicação
+
+NUM1_DIV / NUM2_DIV → operandos da divisão
+
+RES_MULT → resultado da multiplicação
+
+RES_DIV → resultado da divisão
 
 
-3. O resultado é armazenado em uma variável chamada RESULTADO.
+🚀 Objetivo
+
+Este projeto tem como objetivo demonstrar a lógica por trás de operações aritméticas básicas em um processador simplificado, servindo como exercício educacional para disciplinas de Arquitetura de Computadores e Organização de Sistemas.
 
 
-4. A execução é finalizada com a instrução HLT.
+---
 
-
-
-📝 Estrutura do Código
-
-NUM1: primeiro valor a ser somado (inicializado como 10).
-
-NUM2: segundo valor a ser somado (inicializado como 20).
-
-RESULTADO: espaço reservado na memória para armazenar a soma (inicializado como 0).
-
-
-🚀 Exemplo de Execução
-
-Se NUM1 = 10 e NUM2 = 20, após a execução, a variável RESULTADO conterá 30.
-
-📅 Informações do Projeto
-
-Autor: maria tayna
-
-Data: 16/09/2025
 
 
   
