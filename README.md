@@ -1,47 +1,55 @@
-Boa! 🚀
-17-09-2025
-
----
-
-🖥️ Simulador Neander/X3 – Multiplicação e Divisão
-
-Este projeto contém um programa em Assembly para o processador Neander/X3, implementando de forma manual as operações de multiplicação e divisão, já que o conjunto de instruções do Neander não possui essas operações de forma nativa.
-
-📌 Funcionalidades
-
-Multiplicação de dois números inteiros usando soma repetida.
-
-Divisão de dois números inteiros usando subtração repetida.
-
-Armazenamento dos resultados em variáveis de memória.
 
 
-🛠️ Estrutura do Código
+📌 Projeto: Divisão de Dois Números no Neander
 
-LOOP_MUL → rotina de multiplicação (soma repetida).
+Este projeto implementa a divisão inteira de dois números utilizando a arquitetura didática Neander.
 
-LOOP_DIV → rotina de divisão (subtração repetida).
+🔹 Objetivo: Demonstrar o funcionamento de um algoritmo de divisão por subtrações sucessivas, armazenando quociente e resto.
+🔹 Linguagem: Assembly para Neander (usando o simulador NeanderWin).
+🔹 Funcionalidades:
 
-Declaração de Dados → valores de entrada (números) e variáveis para armazenar os resultados.
+Carregamento do dividendo e divisor.
 
+Cálculo do quociente por incrementos.
 
-📂 Organização
+Atualização do resto durante o processo.
 
-NUM1_MULT / NUM2_MULT → operandos da multiplicação
-
-NUM1_DIV / NUM2_DIV → operandos da divisão
-
-RES_MULT → resultado da multiplicação
-
-RES_DIV → resultado da divisão
+Estrutura de repetição (loop) para executar as subtrações.
 
 
-🚀 Objetivo
+Estrutura do Código
 
-Este projeto tem como objetivo demonstrar a lógica por trás de operações aritméticas básicas em um processador simplificado, servindo como exercício educacional para disciplinas de Arquitetura de Computadores e Organização de Sistemas.
+1. Inicialização → Zera acumulador e quociente, carrega o dividendo.
 
 
----
+2. Loop de Divisão → Subtrações sucessivas até o resto ser menor que o divisor.
+
+
+3. Finalização → Guarda o resultado final em memória (quociente e resto).
+
+
+
+Exemplo de Funcionamento
+
+Entrada: Dividendo = 12, Divisor = 3
+
+Saída: Quociente = 4, Resto = 0
+
+
+🛠️ Como executar
+
+Abrir o código no NeanderWin.
+
+Carregar os valores de NUM1_DIV (dividendo) e NUM2_DIV (divisor).
+
+Rodar o programa para visualizar os resultados em QUOCIENTE e RESTO.
+
+
+
+
+
+
+
 
 
 
